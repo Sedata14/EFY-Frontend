@@ -1,0 +1,44 @@
+.centre-d-aide-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.centre-d-aide-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.centre-d-aide-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.questions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.question-item {
+  padding: 15px 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.question-item:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.contact-support {
+  text-align: center;
+  font-size: 15px;
+  color: #333;
+}

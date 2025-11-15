@@ -1,0 +1,157 @@
+:root{
+  --gap-small: 0.5rem;
+  --gap-medium: 1.25rem;
+  --gap-large: 2rem;
+  --bg-top: #111;
+  --bg-main: #fff;
+  --bg-categories : #ebebeb;
+  --text-light: #fff;
+  --text-dark: #222;
+  --accent: #007bff;
+}
+
+
+*{box-sizing:border-box}
+html,body{
+  margin:0;
+  padding:0;
+  font-family:Inter, 
+  system-ui, 
+  -apple-system, 
+  "Segoe UI", 
+  Roboto, 
+  "Helvetica Neue"
+  , Arial
+}
+
+
+.main-container{width:100%;}
+
+
+.TopNavBar{
+  width:100%;
+  background:var(--bg-top);
+  color:var(--text-light);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem 1.25rem;
+  gap:var(--gap-medium);
+  font-size:0.95rem;
+}
+
+.TopNavBarItem{flex:0 1 auto}
+
+.TopNavGroup{
+  display:flex;
+  gap:var(--gap-medium);
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.TopNavItem{cursor:pointer;color:var(--text-light);font-size:0.95rem}
+
+
+.MainNavBar{
+  width:100%;
+  background:var(--bg-main);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:2rem 1.5rem;
+  gap:var(--gap-large);
+  box-shadow:0 2px 8px rgba(0,0,0,0.06);
+  position:relative;
+}
+
+
+.CategoriesNavBar{
+  width:100%;
+  background:var(--bg-categories);
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  padding:2rem 1.5rem;
+  gap:var(--gap-large);
+  box-shadow:0 2px 8px rgba(0,0,0,0.06);
+  position:relative;
+}
+
+
+.NavGroup{
+  display:flex;
+  align-items:center;
+  gap:var(--gap-large);
+  flex-wrap:wrap;
+}
+
+.NavGroupLeft{
+  flex:0 1 auto;
+  align-items:center;
+  gap:1rem
+}
+.NavGroupRight{
+  flex:0 1 auto;
+  align-items:center;
+  gap:1rem
+}
+
+.NavLogo{
+  margin:0;
+  font-size:2rem;
+  letter-spacing:1px;
+  color:var(--text-dark); 
+  text-decoration: none;}
+
+.NavItem{
+  display:flex;
+  align-items:center;
+  gap:var(--gap-small);
+  font-size:1rem;
+  color:var(--text-dark);
+  cursor:pointer;
+  transition:color .18s ease, transform .12s ease;
+  white-space:nowrap;
+}
+
+.NavItem:hover{
+  color:var(--accent);
+  transform:translateY(-1px)
+}
+
+.NavIcon{
+  width:1.25rem;
+  height:1.25rem;
+  object-fit:contain;
+  display:inline-block
+}
+
+@media (max-width:1100px){
+  .NavLogo{font-size:1.35rem}
+  .TopNavBar{font-size:0.9rem;padding:0.45rem 1rem}
+  .MainNavBar{padding:0.6rem 1rem}
+  .NavItem{font-size:0.95rem}
+}
+
+@media (max-width:700px){
+  .TopNavBar{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:0.5rem;
+    padding:0.6rem
+  }
+
+  .MainNavBar{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:0.75rem;
+    padding:0.6rem
+   }
+  .NavGroup{
+    width:100%;
+    justify-content:space-between
+  }
+  .NavGroupRight{
+    justify-content:flex-end
+  }
+}

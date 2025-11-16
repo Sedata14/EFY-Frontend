@@ -32,8 +32,6 @@ Aperçu
 
 <img width="1914" height="909" alt="Capture d&#39;écran 2025-11-16 123852" src="https://github.com/user-attachments/assets/2f56e459-9c6f-4ee6-9061-582262071493" />
 Page d'acceuil.
-<br><br>
-
 
 <img width="1907" height="902" alt="Capture d&#39;écran 2025-11-16 123859" src="https://github.com/user-attachments/assets/9df24698-c936-4725-940b-b159130b48ef" />
 Page présentent tout les produits disponible. Possibilité de trier selon l'ordre alphabétique ou selon le prix.

@@ -17,10 +17,21 @@ Fonctionnalités principales
   - Navigation fluide via une barre de navigation responsive
 
   - Page d’accueil avec sections mises en valeur
+    
+  - Page produits affichant la liste complète avec carte visuelle
 
-  - Composants réutilisables et architecture propre
+  - Page détail produit présentant les informations principales
 
-  - Optimisation du rendu et bonnes pratiques front-end
+  - Page contact avec formulaire fonctionnel
+
+  - Page panier affichant les articles ajoutés
+
+  - Page recherche (barre de recherche) permettant la recherche dynamique
+
+  - Page connexion / inscription pour l’authentification frontend
+
+  - Footer professionnel avec mentions générales et identité du site
+
 
 Installation
   - git clone https://github.com/Sedata14/EFY-Frontend.git
